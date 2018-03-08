@@ -11,6 +11,12 @@ class HomeController extends Controller {
 
     await this.ctx.render('index.njk', data);
   }
+
+  async list() {
+    const ctx = this.ctx;
+    const list = await ctx.service.ptjob.list();
+    ctx.body = list;
+  }
 }
 
 module.exports = HomeController;
