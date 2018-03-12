@@ -7,7 +7,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1518779710808_9428';
 
   // add your config here
-  config.middleware = [];
+  config.middleware = [ 'wechatParser' ];
 
   config.view = {
     defaultViewEngine: 'nunjucks',

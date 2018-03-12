@@ -1,3 +1,12 @@
 {
-  "extends": "eslint-config-egg"
+	"env": {
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2017
+	},
+	"extends": "eslint-config-egg",
+	"rules": {
+		"quotes": ["error", "single",{"allowTemplateLiterals": true}]
+}
 }
